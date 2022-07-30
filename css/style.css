@@ -1,0 +1,99 @@
+body{
+    background-color: #F3F3F3;
+}
+.profile {
+    height: 80%;
+}
+.title {
+    text-align: center;
+}
+.title-description, .title-img {
+    display: inline-block;
+    vertical-align: middle;
+    word-wrap: break-word;
+    width: 30%;
+}
+.navbar{
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    text-align:right;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+.navbar p{
+    position: absolute;
+    text-align:left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 2%;
+}
+.navbar a{
+    display: inline-block;
+    padding: 2%;
+    text-decoration: none;
+    border-left: 1px solid black;
+}
+.navbar a:active{
+    color: blue;
+}
+.navbar a:link{
+    color: grey;
+}
+.navbar a:hover{
+    color: lightblue;
+}
+.button{
+    width: 100%;
+}
+/* #introduction{
+    height: 100%;
+    padding-top: 5%;
+}
+#education{
+    height: 100%;
+    padding-top: 5%;
+}
+#work{
+    height: 100%;
+    padding-top: 5%;
+}
+#project{
+    height: 100%;
+    padding-top: 5%; */
+/* } */
+.contacts{
+    width: 20%;
+    display: inline-block;
+}
+.contacts{
+    width: 20%;
+    display: inline-block;
+    padding-left: 5%;
+    text-align: center;
+}
+.github{
+    width: 30%;
+    display: inline-block;
+}
+.linkedin{
+    width: 30%;
+    display: inline-block;
+}
+.footer{
+    bottom: 20;
+    margin-top: 43%;
+    width: 100%;
+    position: fixed;
+}
+.other-links{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+.footer p{
+    font-weight: bold;
+}
