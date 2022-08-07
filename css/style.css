@@ -1,136 +1,3 @@
-/* body{
-    background-color: #F3F3F3;
-}
-.title {
-    text-align: center;
-}
-.navbar{
-    height: 7%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    text-align:right;
-    background-color: #F3F3F3;
-    right: 0;
-    border-bottom: 1px solid grey;
-}
-.navbar p{
-    position: absolute;
-    text-align:left;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 2%;
-    vertical-align: middle;
-}
-.navbar a{
-    display: inline-block;
-    padding: 2%;
-    text-decoration: none;
-    border-left: 1px solid grey;
-}
-.navbar a:active{
-    color: blue;
-}
-.navbar a:link{
-    color: grey;
-}
-.navbar a:hover{
-    color: lightblue;
-}
-.contacts{
-    width: 15%;
-    margin-left: 15%;
-    text-align: center;
-    display: inline-block;
-}
-.contacts-links{
-    width: 20%;
-    display: inline-block;
-}
-.github{
-    width: 30%;
-    display: inline-block;
-}
-.linkedin{
-    width: 30%;
-    display: inline-block;
-}
-.footer{
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    border-top: 1px solid grey;
-    background-color: #F3F3F3;
-    margin-bottom: 2%;
-}
-.other-links{
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-}
-.footer p{
-    font-weight: bold;
-}
-.introduction{
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    overflow:scroll;
-}
-.introduction .title-img{
-    display: inline-block;
-    width: 40%;
-}
-.introduction .title-description{
-    display: inline-block;
-    width: 25%;
-    margin-left: 25%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #1f1f1f;
-    font-size: 20px;
-}
-.introduction .title-img .profile{
-    display: inline-block; 
-    width: 30%;
-    height: 30%;
-    border-radius: 50%;
-}
-.introduction .title-description .main{
-    font-size: 50px;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.introduction .resume{
-    margin-left: 25%;
-}
-.introduction .resume button{
-    padding: 1%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #1f1f1f;
-    font-size: 20px;
-    border-radius: 10%;
-    border-color:steelblue;
-}
-.introduction .resume a{
-    text-decoration: none;
-}
-.work{
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    overflow:scroll;
-}
-.work b{
-    font-size: 40px;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #1f1f1f;
-    padding-left: 10%;
-}
- */
  body{
     background-color: #F3F3F3;
     margin: 0;
@@ -288,9 +155,6 @@
     background-color: white;
     padding: 2%;
     margin-top: 3%;
-} 
-.container .work ul,li{
-    list-style-type: none;
 }
 .container .work .jobs .JobTitle{
     font-size: 28px;
@@ -365,7 +229,7 @@
     display:block;
 }
 .college .box{
-    padding: 1%;
+    padding: 0.75%;
     background-color: blue;
     height: 10%;
     margin-top: 1%;
@@ -464,4 +328,27 @@
 }
 .project-div .projectLink a{
     text-decoration: none;
+}
+.certificate button{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1f1f1f;
+    font-size: 20px;
+    border-radius: 10%;
+    margin-left:7%;
+    border-color:steelblue;
+}
+.certificate a{
+    text-decoration: none;
+}
+.certification{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+.certificate{
+    display: flex;
+    align-items: center;
+}
+.certificate ol, li{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
