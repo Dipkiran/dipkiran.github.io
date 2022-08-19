@@ -8,7 +8,10 @@
         <div class="navbar">
             <div class="icon"></div>
             <p><b>Dip Kiran Pradhan Newar</b>/SOFTWARE ENGINEER</p>
-            <div class="links">
+            <button class="menu-icons" onclick="myFunction()">
+                <img src="images/menu_icon.png">
+            </button>
+            <div id="links">
                 <a href="/index.html">Home</a>
                 <a href="/work.html">Work</a>
                 <a href="/education.html">Education & Certifications</a>
@@ -172,5 +175,23 @@
                 <div class="contacts-links"><a target="_blank" href="https://www.linkedin.com/in/dipkiran/"><img src="/icons/linkedin.svg"></a></div>
             </div>    
         </div>
+        <script>
+            function myFunction() {
+                if(document.getElementById('links').style.display == "flex"){
+                    document.getElementById('links').style.display='none';
+                } else {
+                    document.getElementById('links').style.display='flex';
+                }
+                // var lengthOfArray=arrayOfElements.length;
+
+                // for (var i=0; i<lengthOfArray;i++){
+                //     if(arrayOfElements[i].style.display == "block"){
+                //         arrayOfElements[i].style.display='none';
+                //     }
+                //     arrayOfElements[i].style.display='block';
+                // }
+                // document.getElementsByClassName("links").style.display = "block";
+            }
+        </script>
     </body>
 </html>
