@@ -374,7 +374,37 @@
         /* margin-left: 25%; */
         /* margin-top: 5%; */
         margin: 10%;
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .work {
+        /* background-color: white; */
+        width: 80%;
+        margin-top: 5%;
+        margin: 10%;
+        display: flex;
+    }
+    .container .education {
+        /* background-color: white; */
+        width: 80%;
+        margin-top: 5%;
+        margin: 10%;
+        display: flex;
+    }
+    .container .myskills {
+        /* background-color: white; */
+        width: 80%;
+        margin-top: 5%;
+        margin: 10%;
+        display: flex;
+    }
+    .container .project {
+        /* background-color: white; */
+        width: 80%;
+        margin-top: 5%;
+        margin: 10%;
+        display: flex;
     }
     .navbar .menu-icons{
         margin-left: 25%;
@@ -386,27 +416,21 @@
         display: block;
     }
     .navbar #links{
-        display: none;
-        flex-direction: column;
+        flex-direction: row;
         background-color: #F3F3F3;
         z-index: 1;
-        width: 30%;
-        margin-left: 63%;
-        text-align: right;
+        width: 100%;
+        text-align: left;
         margin-top: 0% !important;
     }
     .navbar p{
         font-size: 24px;
+        width: 60%;
     }
-    /* .menu-icons img{
-        width: 100%;
-        display: block;
+    .container .education .college .collegeName {
+        width: 60%;
     }
-    .menu-icons{
-        display: inline-block;
-        width: 100%;
+    .container .education .college .Date {
+        width: 30%;
     }
-    #links{
-        display: none;
-    } */
 }
