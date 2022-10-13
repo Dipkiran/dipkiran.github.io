@@ -2,245 +2,409 @@
     background-color: #F3F3F3;
     margin: 0;
     overflow:scroll;
+    font-family: 'Roboto', sans-serif;
 }
 .navbar{
     width: 100%;
-    position: fixed;
     z-index: 1;
     top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
 }
-.navbar .icon{
-    padding: 0.5%;
-    background-color: blue;
-    margin-left: 3%;
-    height: 4%;
-    margin-top: 2%;
-    display: inline-block;
-}
-.navbar p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.navbar .name{
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     padding: 0 1%;
     font-weight: 100;
-    display: inline-block;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.navbar .menu-icons{
-    display: none;
-    width: 2%;
+.resume button{
+    padding: 2% 3%;
+    background-color: #0288d1;
+    border-color:#0288d1;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.container .image .title-img .resume a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar .name .my-name{
+    font-size: 24px;
+    font-weight: 700;
+}
+.navbar .subtitle{
+    font-size: 16px;
 }
 .navbar #links{
-    width: 50%;
     text-align: right;
     margin-top: 2%;
-    display: inline-block;
+    flex: 1;
 }
 .navbar a{
     text-decoration: none;
     color: #0288d1;
     padding: 1% 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 .navbar .active {
-    background-color: #0288d1;
-    color: white;
+    /* background-color: #0288d1; */
+    border-bottom: 3px solid #0288d1;
+    color: #0288d1;
+    font-weight: 700;
 }
 .footer{
     bottom: 0;
     left: 0;
     width: 100%;
     position: fixed;
-    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
     z-index: 1;
+    font-family: 'Roboto', sans-serif;
 }
 .footer .contacts {
-    display: inline-block;
-    padding: 0 5%;
-    width: 20%;
+    flex: 1;
     text-align: center;
+}
+.footer .num {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.footer .contacts .contacts-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .footer .contacts .contacts-links{
-    width: 20%;
-    display: inline-block;
-    text-align: center;
+    flex: 0.1;
 }
 .footer .contacts .contacts-links img{
-    width: 40%;
+    width: 50%;
     padding: 0;
-    display: inline-block;
 }
 .container{
-    background-color: #E6DACE;
     top: 10%;
     bottom: 12%;
     overflow-y: scroll;
     position: absolute;
     width: 100%;
-}
-.container .introduction {
-    background-color: white;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 5%;
     display: flex;
+    flex-direction: row;
+    background-color:#E6DACE;
 }
-.container .work {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 5%;
+.container .image{
+    flex: 1;
+    background-color: #E6DACE;
     display: flex;
-    flex-direction: column;
+    justify-content: right;
+    align-items: center;
 }
-.container .education {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-}
-.container .myskills {
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-}
-.container .project {
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-}
-.container .introduction .title-img{
+.container .image .title-img{
+    flex: 0.5;
     padding: 5% 0;
     flex-direction: column;
-    flex: 0.5;
     text-align: center;
-    background-color:skyblue;
+    background-color:#F4ECE6;
+    z-index: 1;
+    box-shadow: 1px 5px #F4ECE6;
 }
-.container .introduction .title-description{
+.container .image .title-description{
     flex: 0.5;
     flex-direction: column;
     padding: 3%;
 }
-.container .introduction .title-img .profile{
+.container .image .title-img .profile{
     width: 180px;
     height: 180px;
     border-radius: 50%;
 }
-.container .introduction .title-img .name{
+.container .image .title-img .name{
     font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
-.container .introduction .title-img .line{
+.container .image .title-img .line{
     padding: 1%;
     width: 20%;
     background-color: blue;
     margin-left: 40%;
 }
-.container .introduction .title-description .main{
-    font-size: 30px;
-    font-weight: bold;
+.container .introduction {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .container .introduction .title-description{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex: 0.5;
+    padding: 2% 3%;
+    flex-direction: column;
+    background-color:white;
+    z-index: 1;
+    border: 1px solid white;
+    text-align-last: auto;
 }
-.container .introduction .title-img .resume button{
-    padding: 1%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #1f1f1f;
-    font-size: 20px;
-    border-radius: 10%;
-    border-color:steelblue;
+.container .introduction .title-description .main{
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
 }
-.container .introduction .title-img .resume a{
-    text-decoration: none;
+.container .introduction .title-description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.container .work {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
 }
 .container .work .jobs{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 2%;
     margin-top: 3%;
 }
 .container .work .jobs .JobTitle{
-    font-size: 28px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin: 0;
 }
+.container .work .jobs .companyInfo{
+    display: flex;
+    flex-direction: row;
+}
 .container .work .jobs .CompanyTitle{
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     display:inline-block;
     width: 60%;
 }
 .container .work .jobs .Date{
-    font-size: 12px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     text-align:right;
     display:inline-block;
     width: 30%;
+    color: #0288d1;
+}
+.Duties{
+    width: 90%;
 }
 .duty{
     display: flex;
+    align-items:baseline;
 }
 .duty .box{
-    padding: 1%;
-    background-color: blue;
-    height: 10%;
-    margin-top: 0.5%;
+    padding: 0.5%;
+    background-color: #0288d1;
+    height: 2%;
 }
 .task{
     padding: 0 5%;
     margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
-.college .name{
+.container .education {
     display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
 }
-.container .education .college{
+.container .education .degree{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 2%;
     margin-top: 3%;
 }
-.container .education .college .Degree{
-    font-size: 28px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    margin: 0;
-    padding: 0 5%;
+.container .education .degree .title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
 }
-.container .education .college .collegeName{
+.container .education .degree .colleges{
+    display: flex;
+    flex-direction: column;
+}
+.container .education .degree .colleges .college{
+    flex: 1;
+    border-bottom: 1px solid #0288d1;
+}
+.container .education .degree .colleges .college .name{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+}
+.container .education .degree .colleges .college .name .Degree{
     font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    display:inline-block;
-    width: 72%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-left: 2%;
+}
+.container .education .degree .colleges .college .name .box{
+    padding: 0.5%;
+    background-color: #0288d1;
+    height: 2%;
+}
+.container .education .degree .colleges .college .college-info{
+    display: flex;
+    flex-direction: row;
+}
+.container .education .degree .colleges .college .collegeName{
+    flex: 1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     margin-left: 7%;
 }
 .container .education .college .Date{
-    font-size: 14px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 300;
-    text-align:right;
-    display:inline-block;
+    font-size: 16px;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    color: #0288d1;
+    font-weight: 700;
+    text-align: right;
 }
 .container .education .college .GPA{
-    font-size: 14px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 300;
+    font-size: 16px;
     margin-left: 7%;
-    display:block;
+    font-family: 'Roboto', sans-serif;
+    color: #0288d1;
+    font-weight: 700;
 }
-.college .box{
-    padding: 0.75%;
-    background-color: blue;
-    height: 10%;
+.container .education .degree .colleges .college .name .link{
+    padding: 0.5% 3%;
+}
+.container .education .degree .colleges .college .name .link button{
+    background-color: #0288d1;
+    border-color:#0288d1;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: white;
+}
+.container .education .degree .colleges .college .name a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.container .work .skill .title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.container .work .skill .skills{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 2%;
+}
+.container .work .skill{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2%;
+    margin-top: 3%;
+}
+.container .work .skill .name{
+    border-bottom: 1px solid #0288d1;
+    display: flex;
+    align-items: center;
+}
+.container .work .skill .name .box{
+    padding: 0.5%;
+    background-color: #0288d1;
+    height: 2%;
+    margin-top: 0.5%;
+}
+.container .project {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+}
+.container .project .project-div{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2%;
+    margin-top: 3%;
+}
+.container .project .project-div .title .box{
+    padding: 0.5%;
+    background-color: #0288d1;
+    height: 2%;
     margin-top: 1%;
 }
+.container .project .project-div .title .project-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 2%;
+}
+.container .project .project-div .title{
+    display: flex
+} 
+.container .project .project-div .tasks{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 2%;
+} 
+.container .project .project-div .tasks .box{
+    padding: 0.5%;
+    background-color: #0288d1;
+    height: 2%;
+    margin-top: 0.5%;
+}
+.container .project .project-div .title .task{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    flex: 1;
+}
+.project-div .projectLink{
+    margin-top: 5%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-left: 5%;
+}
+.project-div .projectLink button{
+    padding: 1% 3%;
+    background-color: #0288d1;
+    border-color:#0288d1;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.project-div .projectLink a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
 .container .publication{
     background-color: white;
     padding: 2%;
@@ -280,85 +444,7 @@
 .publication  .publicationLink a{
     text-decoration: none;
 }
-.container .myskills .skills{
-    background-color: white;
-    padding: 2%;
-    margin-top: 3%;
-} 
-.container .myskills .skills .title{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-}
-.container .project .project-div{
-    background-color: white;
-    padding: 2%;
-    margin-top: 3%;
-}
-.container .project .project-div .title .box{
-    padding: 1%;
-    background-color: blue;
-    height: 10%;
-    margin-top: 1.5%;
-}
-.container .project .project-div .title .project-name{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 28px;
-    margin-left: 2%;
-}
-.container .project .project-div .title{
-    display: flex
-} 
-.container .project .project-div .tasks{
-    display: flex;
-    margin-left: 5%;
-    margin-top: 2%;
-} 
-.container .project .project-div .tasks .box{
-    padding: 0.5%;
-    background-color: blue;
-    height: 10%;
-    margin-top: 1%;
-}
-.container .project .project-div .title .task{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-}
-.project-div .projectLink button{
-    padding: 1%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #1f1f1f;
-    font-size: 20px;
-    border-radius: 10%;
-    margin-left: 5%;
-    margin-top: 3%;
-    border-color:steelblue;
-}
-.project-div .projectLink a{
-    text-decoration: none;
-}
-.certificate button{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #1f1f1f;
-    font-size: 20px;
-    border-radius: 10%;
-    margin-left:7%;
-    border-color:steelblue;
-}
-.certificate a{
-    text-decoration: none;
-}
-.certification{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-}
-.certificate{
-    display: flex;
-    align-items: center;
-}
-.certificate ol, li{
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 @media only screen and (max-device-width: 600px) {
     .container{
         top: 5%;
@@ -434,3 +520,22 @@
         width: 30%;
     }
 }
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    font-size: 30px;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }

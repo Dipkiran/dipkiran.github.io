@@ -3,45 +3,57 @@
     <head>
         <title>My profile</title>
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="navbar">
-            <div class="icon"></div>
-            <p><b>Dip Kiran Pradhan Newar</b>/SOFTWARE ENGINEER</p>
+            <div class="name">
+                <p class="my-name">Dip Kiran Pradhan Newar<p class="subtitle">/SOFTWARE ENGINEER</p></p>
+            </div>
             <div id="links">
                 <a href="/index.html" class="active">Home</a>
                 <a href="/work.html">Work</a>
-                <a href="/education.html">Education & Certifications</a>
-                <a href="/skills.html">Skills & Publication</a>
+                <a href="/education.html">Education</a>
                 <a href="/project.html">Projects</a>
             </div>
         </div>
         <div class = "container">
-            <div class="introduction">
+            <div class="image">
                 <div class="title-img">
                     <img class="profile" src="/images/dip.jpg">
                     <p class="name">Dip Kiran Pradhan Newar</p>
                     <div class="line"></div>
                     <p>SOFTWARE ENGINEER</p>
                     <div class="resume">
-                        <button><a href="/Resume.pdf" target="_blank">My Resume</a></button>
+                        <button><a href="/CV.pdf" target="_blank">Download CV</a></button>
                     </div>
                 </div>
+            </div>
+            <div class="introduction">
                 <div class="title-description">
-                    <p class="main">Hi! I am Dip Kiran</p> I am a Software Engineer with two years of experience working professionally with Python and Web Development. 
-                    I am currently working as Graduate Research Assistant at the University of Nebraska Omaha and will graduate in December 2022 with a master of Science in Computer Science. 
-                    I have skills of Python, Java, C++ and JavaScript Programming Languages. I also have ML and Data Science experiences.
+                    <div class="main">Hi! <div class="wave">👋</div></div>
+                    <p class="description"> I am a Software Engineer with two years of experience working professionally with Python and Web Development. 
+                    I am currently working as Graduate Research Assistant at the University of Nebraska Omaha. I will graduate in December 2022 with a
+                    master of Science in Computer Science degree. My current research is to find cryptographic API misuse in Java files and help students 
+                    do secure coding. <br><br>
+                    Before joining UNO, I worked as a Software Engineer in a startup company in Nepal named Nepware Private Limited. (<a href="https://nepware.com/">Link</a>) 
+                    for nearly two years. I have skills and experience with Python, Java, Django, Data Science, ML, React, CI/CD pipeline, Docker, and version control systems. 
+                    I have experience with SQL databases like MySQL and PostgreSQL and No SQL databases like MongoDB.</p>
                 </div>
                 
             </div>
         </div>
         <div class="footer">
-            <div class="contacts"><p>Phone</p> 1-531-213-9959</div>
+            <div class="contacts"><p>Phone</p> <p class="num">1-531-213-9959</p></div>
             <div class="contacts"><p>Email</p><a target="_blank" href="mailto:dipkiran26@gmail.com?subject=subject">dipkiran26@gmail.com</a></div>
             <div class="contacts">
                 <p>Follow</p>
-                <div class="contacts-links"><a target="_blank" href="https://github.com/Dipkiran"><img src="/icons/github.png"></a></div>
-                <div class="contacts-links"><a target="_blank" href="https://www.linkedin.com/in/dipkiran/"><img src="/icons/linkedin.svg"></a></div>
+                <div class="contacts-img">
+                    <div class="contacts-links"><a target="_blank" href="https://github.com/Dipkiran"><img src="/icons/github.png"></a></div>
+                    <div class="contacts-links"><a target="_blank" href="https://www.linkedin.com/in/dipkiran/"><img src="/icons/linkedin.svg"></a></div>
+                </div>
             </div>    
         </div>
     </body>
