@@ -449,19 +449,26 @@
     .container{
         top: 5%;
         bottom: 5%;
+        flex-direction: column;
     }
-    .navbar .icon{
-        display: none;
+    .container .image{
+        justify-content: center;
+        flex: 0.5;
+    }
+    .navbar {
+        display: block;
     }
     .container .introduction {
-        background-color: white;
-        width: 80%;
-        /* font-size: 24px; */
-        /* margin-left: 25%; */
-        /* margin-top: 5%; */
-        margin: 10%;
+        background-color: #E6DACE;
         display: flex;
         flex-direction: column;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .container .introduction .title-description {
+        background-color: #E6DACE;
+        border: none;
+        flex: 0.5;
     }
 
     .container .work {
